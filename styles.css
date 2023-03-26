@@ -12,7 +12,7 @@ ul {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 /* sidebar section Start */
@@ -47,9 +47,74 @@ ul {
 /* header Section Start */
 
 .header {
-    background-color: orange;
+    background-color: white;
+    padding: 20px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+}
+
+.header-top, .header-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.header-bottom {
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.profile-bar, .search-bar, .welcome-bar, .buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-bar {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#search {
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(232, 231, 231);
+    height: 30px;
+    width: 40vw;
+}
+
+.greeting {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.user{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.profile-bar img {
+    width: 40px;
+    height: 40px;
+}
+
+.welcome-bar img {
+    width: 75px;
+    height: 75px;
+}
+
+.buttons{
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(25, 146, 212);
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    width: 80px;
+    height: 30px;
+    font-weight: 500;
 }
 
 /* main-content section start*/
