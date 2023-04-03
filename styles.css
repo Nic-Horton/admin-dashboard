@@ -123,10 +123,76 @@ button {
 /* main-content section start*/
 
 .main-content{
-    background-color: lightgrey;
+    background-color: rgb(223, 221, 221);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 40px;
+    padding-top: 40px;
+}
+.projects-display{
+    margin-left: 20px;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(225px, 1fr));
+    column-gap: 40px;
+    row-gap: 20px;
+}
+.project {
+    display: grid;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: -5px 0 rgba(25, 146, 212, 0.73);
+    padding: 10px;
+    align-items: center;
+}
+
+.interactors {
+   justify-self: flex-end;
+   padding-right: 15px;
+}
+
+.project-heading{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.project-description{
+    font-size: 14px;
+    color: rgb(119, 118, 118);
+}
+
+.project-section-heading,
+.announcements-section-heading,
+.trending-section-heading{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .trending-profile img {
     width: 40px;
     height: 40px;
 }
+
+.sub-section{
+    margin: 0 20px;
+    display: grid;
+}
+
+.announcements-section{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.trending-section{
+    display: flex;
+    flex-direction: column;
+    background-color: darkolivegreen;
+}
+
+
