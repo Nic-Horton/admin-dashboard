@@ -213,4 +213,20 @@ hr {
     flex-direction: column;
 }
 
+.trending-container{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
 
+.trending-profile{
+    display: flex;
+    gap: 10px;
+    padding: 5px 0px;
+    font-size: 14px;
+    color: rgb(119, 118, 118);
+}
+
+.username{
+    color: black;
+}
